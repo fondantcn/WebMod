@@ -17,6 +17,7 @@
     //暴露类
     global.PopupImgsBox = factory()
 })(window, (function () {
+    let IMG = undefined
     class PopupImgsBox {
         constructor() {
         }

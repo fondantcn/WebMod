@@ -1,7 +1,7 @@
 # PopupImagesBox
 
 ## 1.0
-    > [CDN](https://dulcisweb.s3.ladydaily.com/WebMod/PopupImagesBox/PopupImgBox-1.0.0.min.js)
+> [CDN](https://dulcisweb.s3.ladydaily.com/WebMod/PopupImagesBox/PopupImgBox-1.0.0.min.js)
 
 ## 2.0
 

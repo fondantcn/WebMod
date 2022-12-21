@@ -1,4 +1,4 @@
-(function (window, PopupImgsBox) {
+(function (global, factory) {
     //初始化
     //动态添加标签
     const addHtmlTag = (Element, dad = "html", set = {}, text = '') => {
@@ -15,17 +15,15 @@
     });
 
     //暴露类
-    window.PopupImgsBox = PopupImgsBox()
+    global.PopupImgsBox = factory()
 })(window, (function () {
     class PopupImgsBox {
         constructor() {
         }
-
+        // static
         Init() {
             console.log(1111)
         }
     }
     return PopupImgsBox
 }));
-let a = new PopupImgsBox()
-a.Init()

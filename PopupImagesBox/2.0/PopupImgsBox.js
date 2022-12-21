@@ -1,7 +1,9 @@
-(function () {
+(function (window, PopupImgsBox) {
+    //初始化
+    //动态添加标签
     const addHtmlTag = (Element, dad = "html", set = {}, text = '') => {
         let create = document.createElement(Element)
-        create.innerHTML = text
+        if (text != '') create.outerHTML = text
         for (let key in set) {
             create.setAttribute(key, set[key])
         }
@@ -11,7 +13,19 @@
         rel: 'stylesheet',
         href: 'https://at.alicdn.com/t/c/font_3744158_yul2iukvz89.css',
     });
-    addHtmlTag('script', 'html', {
-        src: 'https://cdn.jsdelivr.net/npm/jquery@3.6.2/dist/jquery.min.js',
-    });
-})();
+
+    //暴露类
+    window.PopupImgsBox = PopupImgsBox()
+})(window, (function () {
+    class PopupImgsBox {
+        constructor() {
+        }
+
+        Init() {
+            console.log(1111)
+        }
+    }
+    return PopupImgsBox
+}));
+let a = new PopupImgsBox()
+a.Init()

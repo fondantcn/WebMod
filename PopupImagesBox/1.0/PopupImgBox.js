@@ -142,14 +142,15 @@ class appPopupImgBox {
     }
     imgLoad(id, img) {
         let _this = this;
-
+        _this.imagesBoxImgTop = 0;
+        _this.imagesBoxImgLeft = 0;
         let _syncCircle = $('#app-imgBox  .sync-circle');
         // 切换图片 切换加载状态
         if (_this.imgsUrlLoad[id] != 1) {
             $(_this.imagesScale)
                 .stop()
                 .animate({ opacity: 0 }, 100, function () {
-                    // $(_syncCircle).show();
+                    $(_syncCircle).show();
                 });
             $(_this.imagesBoxImg).attr({
                 src: _this.imgsUrl[id],

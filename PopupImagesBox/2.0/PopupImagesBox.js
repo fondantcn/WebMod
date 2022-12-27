@@ -11,15 +11,18 @@
     }
     addHtmlTag('link', 'html', {
         rel: 'stylesheet',
-        href: 'https://at.alicdn.com/t/c/font_3744158_yul2iukvz89.css',
+        href: '//at.alicdn.com/t/c/font_3744158_oepzxhayz.css',
     });
 
     //暴露类
     global.PopupImgsBox = factory()
+    console.log(PopupImgsBox)
+    console.log(new PopupImgsBox)
 })(window, (function () {
     let IMG = undefined
     class PopupImgsBox {
         constructor() {
+            this.images = IMG
         }
         // static
         Init() {

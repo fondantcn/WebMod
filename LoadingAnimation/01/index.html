@@ -6,46 +6,46 @@
 </head>
 <body>
 <style>
-  *{
-    margin: 0;
-    padding: 0;
-  }
-  .LoadingAnimation{
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    z-index: 9;
-    background-color: #1b9cfc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .LoadingAnimation .item{
-    background-color: #fff;
-    animation: wave 1.5s infinite ease-in-out;
-    animation-delay: var(--delay);
-    border-radius: 8px;
-  }
-  @keyframes wave {
-    0%,40%,100%{
-      width: 8px;
-      height: 50px;
-      margin: 0 5px ;
+    *{
+        margin: 0;
+        padding: 0;
     }
-    20%{
-      width: 14px;
-      height: 100px;
-      margin: 0 2px ;
+    .LoadingAnimation{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        z-index: 9;
+        background-color: #1b9cfc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-  }
+    .LoadingAnimation .item{
+        background-color: #fff;
+        animation: wave 1.5s infinite ease-in-out;
+        animation-delay: var(--delay);
+        border-radius: 8px;
+    }
+    @keyframes wave {
+        0%,40%,100%{
+            width: 8px;
+            height: 50px;
+            margin: 0 5px ;
+        }
+        20%{
+            width: 14px;
+            height: 100px;
+            margin: 0 2px ;
+        }
+    }
 </style>
-  <div class="LoadingAnimation">
-      <div class=item style="--delay:-1.5s"></div>
-      <div class=item style="--delay:-1.4s"></div>
-      <div class=item style="--delay:-1.3s"></div>
-      <div class=item style="--delay:-1.2s"></div>
-      <div class=item style="--delay:-1.1s"></div>
-      <div class=item style="--delay:-1.0s"></div>
-  </div>
+<div class="LoadingAnimation">
+    <div class=item style="--delay:-1.5s"></div>
+    <div class=item style="--delay:-1.4s"></div>
+    <div class=item style="--delay:-1.3s"></div>
+    <div class=item style="--delay:-1.2s"></div>
+    <div class=item style="--delay:-1.1s"></div>
+    <div class=item style="--delay:-1.0s"></div>
+</div>
 </body>
 </html>
